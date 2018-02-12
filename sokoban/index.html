@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sokoban</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/all.css">
+  </head>
+  <body>
+    <div class="console" data-console>
+      <div class="console__screen" data-screen="mainmenu">
+        <div class="console__title">Use arrows to choose<br>Press Enter to select</div>
+        <div class="menu" data-menu="main">
+          <div class="menu__item" data-action="game" data-level="1">Start game</div>
+          <div class="menu__item" data-action="levels">Choose level</div>
+          <div class="menu__item" data-action="theme">Choose theme</div>
+          <div class="menu__item" data-action="info">How to play</div>
+        </div>
+      </div>
+      <div class="console__screen hidden" data-screen="levels">
+        <div class="console__title">Use arrows to choose<br>Press Enter to select</div>
+        <div class="menu" data-menu="levels">
+          <div class="menu__item" data-level="1" data-action="game">1</div>
+          <div class="menu__item" data-level="2" data-action="game">2</div>
+          <div class="menu__item" data-level="3" data-action="game">3</div>
+          <div class="menu__item" data-level="4" data-action="game">4</div>
+          <div class="menu__item" data-level="5" data-action="game">5</div>
+          <div class="menu__item" data-level="6" data-action="game">6</div>
+          <div class="menu__item" data-level="7" data-action="game">7</div>
+          <div class="menu__item" data-level="8" data-action="game">8</div>
+          <div class="menu__item" data-level="9" data-action="game">9</div>
+          <div class="menu__item" data-level="10" data-action="game">10</div>
+          <div class="menu__item" data-level="11" data-action="game">11</div>
+          <div class="menu__item" data-level="12" data-action="game">12</div>
+          <div class="menu__item" data-level="13" data-action="game">13</div>
+          <div class="menu__item" data-level="14" data-action="game">14</div>
+          <div class="menu__item" data-level="15" data-action="game">15</div>
+          <div class="menu__item" data-level="16" data-action="game">16</div>
+          <div class="menu__item" data-level="17" data-action="game">17</div>
+          <div class="menu__item" data-level="18" data-action="game">18</div>
+          <div class="menu__item" data-level="19" data-action="game">19</div>
+          <div class="menu__item" data-level="20" data-action="game">20</div>
+          <div class="menu__item" data-level="21" data-action="game">21</div>
+          <div class="menu__item" data-level="22" data-action="game">22</div>
+          <div class="menu__item" data-level="23" data-action="game">23</div>
+          <div class="menu__item" data-level="24" data-action="game">24</div>
+          <div class="menu__item" data-level="25" data-action="game">25</div>
+          <div class="menu__item" data-level="26" data-action="game">26</div>
+          <div class="menu__item" data-level="27" data-action="game">27</div>
+          <div class="menu__item" data-level="28" data-action="game">28</div>
+          <div class="menu__item" data-level="29" data-action="game">29</div>
+          <div class="menu__item" data-level="30" data-action="game">30</div>
+          <div class="menu__item" data-level="31" data-action="game">31</div>
+          <div class="menu__item" data-level="32" data-action="game">32</div>
+          <div class="menu__item" data-level="33" data-action="game">33</div>
+          <div class="menu__item" data-level="34" data-action="game">34</div>
+          <div class="menu__item" data-level="35" data-action="game">35</div>
+          <div class="menu__item" data-level="36" data-action="game">36</div>
+          <div class="menu__item" data-level="37" data-action="game">37</div>
+          <div class="menu__item" data-level="38" data-action="game">38</div>
+          <div class="menu__item" data-level="39" data-action="game">39</div>
+          <div class="menu__item" data-level="40" data-action="game">40</div>
+          <div class="menu__item" data-level="41" data-action="game">41</div>
+          <div class="menu__item" data-level="42" data-action="game">42</div>
+          <div class="menu__item" data-level="43" data-action="game">43</div>
+          <div class="menu__item" data-level="44" data-action="game">44</div>
+          <div class="menu__item" data-level="45" data-action="game">45</div>
+          <div class="menu__item" data-level="46" data-action="game">46</div>
+          <div class="menu__item" data-level="47" data-action="game">47</div>
+          <div class="menu__item" data-level="48" data-action="game">48</div>
+          <div class="menu__item" data-level="49" data-action="game">49</div>
+          <div class="menu__item" data-level="50" data-action="game">50</div>
+          <div class="menu__item" data-level="51" data-action="game">51</div>
+          <div class="menu__item" data-level="52" data-action="game">52</div>
+          <div class="menu__item" data-level="53" data-action="game">53</div>
+          <div class="menu__item" data-level="54" data-action="game">54</div>
+          <div class="menu__item" data-level="55" data-action="game">55</div>
+          <div class="menu__item" data-level="56" data-action="game">56</div>
+          <div class="menu__item" data-level="57" data-action="game">57</div>
+          <div class="menu__item" data-level="58" data-action="game">58</div>
+          <div class="menu__item" data-level="59" data-action="game">59</div>
+          <div class="menu__item" data-level="60" data-action="game">60</div>
+        </div>
+      </div>
+      <div class="console__screen hidden" data-screen="theme">
+        <div class="console__title">Use arrows to choose<br>Press Enter to select</div>
+        <div class="menu" data-menu="theme">
+          <div class="menu__item" data-action="mainmenu" data-theme="symbols">Symbols @</div>
+          <div class="menu__item" data-action="mainmenu" data-theme="programer">
+            Programmer
+             <span class="icon">&#x0055;</span>
+          </div>
+          <div class="menu__item" data-action="mainmenu" data-theme="christmas">
+            Christmas
+             <span class="icon">&#x0047;</span>
+          </div>
+          <div class="menu__item" data-action="mainmenu" data-theme="postman">
+            Postman
+             <span class="icon">&#x0052;</span>
+          </div>
+          <div class="menu__item" data-action="mainmenu" data-theme="farm">
+            Farm
+             <span class="icon">&#x004e;</span>
+          </div>
+          <div class="menu__item" data-action="mainmenu" data-theme="ufo">
+            UFO
+             <span class="icon">&#x004f;</span>
+          </div>
+        </div>
+      </div>
+      <div class="console__screen hidden" data-screen="info">
+        <div class="console__title">Press Esc to exit to menu</div>
+        <div>
+          The player may move horizontally or vertically onto empty squares. The player can also move a box.
+          Boxes may not be pushed into other boxes, and they cannot be pulled.<br>The puzzle is solved when all boxes are at storage locations.<br><br>Use Ctrl + Z to undo last move. You can undo 1000 moves.<br>Press R to restart level.<br><br><span class="icon" id="js-icon-player">@ </span> — player<br><span class="icon" id="js-icon-target">. </span> — target<br><span class="icon" id="js-icon-item">+ </span> — item<br><span class="icon" id="js-icon-active">& </span> — active item<br><span class="icon" id="js-icon-wall">X </span> — wall
+        </div>
+      </div>
+      <div class="console__screen hidden" data-screen="game">
+        <div class="console__title">Use arrows to move. Press R to restart level<br>Use Ctrl + Z to undo<br>Press Esc to exit to menu and reset all your progress</div>
+        <div class="console__title">Level <span id="js-sokoban-level">1</span>
+          <div class="console-stats"><span class="console-stats__item">Moves <span id="js-sokoban-moves">0</span></span><span class="console-stats__item">Pushes <span id="js-sokoban-pushes">0</span></span><span class="console-stats__item">Time <span id="js-sokoban-time">00:00:00</span></span></div>
+        </div>
+        <div class="console__canvas" id="js-sokoban-canvas"></div>
+        <div class="console__footer hidden" id="js-socoban-win">Level complete!<br>Press Enter for next level</div>
+        <div class="console__footer hidden" id="js-socoban-finish">Congratulations!<br>You have finished all levels! Press Esc to exit to menu</div>
+      </div>
+    </div>
+    <script src="js/all.js" async></script>
+  </body>
+</html>
